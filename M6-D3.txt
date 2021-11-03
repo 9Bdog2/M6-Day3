@@ -9,4 +9,6 @@ Object-relational mapping (ORM)
 3.Syncronising 
 
 
+{onDelete: "CASCADE"}
 
+asdasdasddasd
