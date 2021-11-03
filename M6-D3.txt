@@ -1,0 +1,12 @@
+Sequelize.org
+
+npm i sequelize 
+
+Object-relational mapping (ORM)
+
+1.Create the instate
+2.Executing my models 
+3.Syncronising 
+
+
+
