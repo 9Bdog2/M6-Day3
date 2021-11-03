@@ -1,3 +1,7 @@
-import Products from "./Product.js";
+import Product from "./Product.js";
+import Review from "./Review.js";
 
-export default { Products };
+Product.hasMany(Review);
+Review.belongsTo(Product);
+
+export default { Product, Review };

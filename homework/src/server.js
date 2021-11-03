@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import { testConnection } from "./db/index.js";
+import { testConnection, connectDB } from "./db/index.js";
 import productsRouter from "./services/products/index.js";
 import models from "./services/products/index.js"
 
@@ -16,7 +16,7 @@ server.use("/products", productsRouter);
 server.listen(PORT, async () => {
   console.log(`Server is listening on port ${PORT}`);
   await testConnection();
-  /* await connectDB() */
+  await connectDB()
 });
 
 server.on("error", (error) => {
